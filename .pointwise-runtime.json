@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "kind": "cli",
+  "setup": [
+    [
+      "python3",
+      "-I",
+      "-m",
+      "py_compile",
+      "/workspace/temporal_quantile.py",
+      "/workspace/test_temporal_quantile.py",
+      "/workspace/benchmark_temporal_quantile.py"
+    ]
+  ],
+  "verify": [
+    "python3",
+    "-I",
+    "/workspace/test_temporal_quantile.py"
+  ],
+  "demo": [
+    "python3",
+    "-I",
+    "/workspace/temporal_quantile.py",
+    "demo"
+  ]
+}
